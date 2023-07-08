@@ -56,11 +56,24 @@ i:hover {
 }
 
 #resultat {
-  padding: 10px 20px 90px;
+  padding: 10px 20px 10px;
   margin: 10px;
   color: white;
   display: flex;
+  flex-direction: column;
+
+}
+
+#resultathaut {
+  display: flex;
   justify-content: flex-end;
+
+}
+
+#resultatbas {
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 #resultat #clignoteur {
@@ -74,6 +87,9 @@ i:hover {
 #resultat #calcul {
   font-size: 1.8rem;
   letter-spacing: 1px;
+}
+
+#resultatpre {
 }
 
 @keyframes clignoter {

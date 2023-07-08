@@ -3,8 +3,7 @@ const calcul = document.getElementById("calcul");
 const arrow = document.querySelector(".fa-arrow-left");
 const egal = document.getElementById("egal");
 const reset = document.getElementById("reset");
-
-// Animation
+const resultatbas = document.getElementById("resultatbas");
 
 buttons.forEach((button) => {
   button.addEventListener("mousedown", () => {
@@ -22,6 +21,7 @@ buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     calcul.textContent += e.target.id;
     console.log(calcul.textContent);
+    resultatbas.textContent = eval(calcul.textContent);
   });
 });
 
@@ -32,9 +32,11 @@ arrow.addEventListener("click", () => {
 
 egal.addEventListener("click", () => {
   calcul.textContent = eval(calcul.textContent);
+  resultatbas.textContent = "";
 });
 
 reset.addEventListener("click", () => {
   calcul.textContent = "";
 });
+
 
