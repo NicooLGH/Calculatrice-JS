@@ -3,7 +3,7 @@ body {
   font-family: arial;
   margin: 0;
   padding: 0;
-  background-color: green;
+  background-color: #F0E68C;
 }
 
 #fonctionnalite {
@@ -63,12 +63,17 @@ i:hover {
   justify-content: flex-end;
 }
 
-#resultat p {
+#resultat #clignoteur {
   font-size: 1.8rem;
   letter-spacing: 1px;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: clignoter;
+}
+
+#resultat #calcul {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
 }
 
 @keyframes clignoter {
@@ -96,7 +101,6 @@ i:hover {
 }
 
 .button:hover {
-  background-color: #3c3c3c;
   transition: 0.4s;
 }
 
@@ -104,12 +108,23 @@ i:hover {
   color: #CE1327;
 }
 
-#parenthese, #pourcentage, #division, #multiplication, #soustraction, #operation {
+#parenthese, #pourcentage, #:, #*, #-, #+ {
   color: #F0E68C;
 }
 
-#division, #multiplication, #soustraction, #operation, #egal {
+#:, #*, #-, #+, #egal {
   font-weight: 900;
+}
+
+.button1 {
+  border-radius: 500px;
+  border: none;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  transition: 0.4s;
 }
 
 #egal {
