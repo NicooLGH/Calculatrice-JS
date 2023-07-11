@@ -1,9 +1,82 @@
+:root {
+  --jaune: #f0E68C;
+  --beige: #FECFB1;
+  --vert: #B1FEC4;
+  --bleu: #B1F0FE;
+  --violet: #C9B1FE;
+  --rouge: #FEB1B1;
+  --blanc: #ffffff;
+}
+
 body {
   min-height: 100vh;
   font-family: arial;
   margin: 0;
   padding: 0;
-  background-color: #F0E68C;
+  background-color: var(--jaune);
+  //background-color: var(--beige);
+  //background-color: var(--vert);
+  //background-color: var(--bleu);
+  //background-color: var(--violet);
+  //background-color: var(--rouge);
+  //background-color: var(--blanc);
+}
+
+.fa-palette {
+  color: #161616;
+  position: absolute;
+  font-size: 2rem;
+  top: 30px;
+  left: 30px;
+}
+
+#choix-couleur {
+  position: absolute;
+  background: #161616;
+  height: 60px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  top: 30px;
+  left: 30px;
+}
+
+#jaune, #beige, #vert, #bleu, #violet, #rouge, #blanc {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#jaune {
+  background: var(--jaune);
+}
+
+#beige {
+  background: var(--beige);
+}
+
+#vert {
+  background: var(--vert);
+}
+
+#bleu {
+  background: var(--bleu);
+}
+
+#violet {
+  background: var(--violet);
+}
+
+#rouge {
+  background: var(--rouge);
+}
+
+#blanc {
+  background: var(--blanc);
 }
 
 #fonctionnalite {
@@ -29,7 +102,7 @@ i{
   transition: 0.4s;
 }
 
-i:hover {
+#calculatrice i:hover {
   background-color: #3c3c3c;
   transition: 0.4s;
 }
@@ -144,7 +217,13 @@ i:hover {
 }
 
 #egal {
-  background-color: #F0E68C;
+  background-color: var(--jaune);
+  //background-color: var(--beige);
+  //background-color: var(--vert);
+  //background-color: var(--bleu);
+  //background-color: var(--violet);
+  //background-color: var(--rouge);
+  //background-color: var(--blanc);
   color: #1d1d1d;
   transition: 0.4s;
 }
