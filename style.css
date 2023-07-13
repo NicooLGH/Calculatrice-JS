@@ -25,9 +25,14 @@ body {
 .fa-palette {
   color: #161616;
   position: absolute;
-  font-size: 2rem;
-  top: 30px;
+  top: 32px;
   left: 30px;
+  font-size: 40px;
+  transition: 0.4s;
+}
+
+.fa-palette:hover {
+  transform: scale(1.2);
 }
 
 #choix-couleur {
@@ -40,7 +45,10 @@ body {
   align-items: center;
   border-radius: 50px;
   top: 30px;
-  left: 30px;
+  left: -500px;
+  transition: 0.4s;
+  opacity: 0;
+  z-index: -1;
 }
 
 #jaune, #beige, #vert, #bleu, #violet, #rouge, #blanc {
@@ -201,7 +209,7 @@ i{
   color: #F0E68C;
 }
 
-#:, #*, #-, #+, #egal {
+#/, #*, #-, #+, #egal {
   font-weight: 900;
 }
 
